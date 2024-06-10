@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  // This runs when the component is first created
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    document.body.style.backgroundColor = '#575D90';
+  });
+</script>
+
+<!-- Your content here -->
+
+<p>Hello!</p>
