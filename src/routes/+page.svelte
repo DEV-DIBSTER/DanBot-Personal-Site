@@ -27,62 +27,91 @@
     z-index: 1; /* Ensures content is above the background and dim overlay */
     color: white; /* Example text color to stand out against the dimmed background */
   }
-
-  .grid-container {
-    padding: 20px; /* Add padding to the grid container */
-  }
-
-  .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 4px;
-  }
-
-  .box {
-    background-color: white;
-    border-radius: 8px;
-    padding: 16px;
-  }
 </style>
 
-<div class="background-container"></div>
-<div class="dim-overlay"></div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="/DIBSTER-2.png">
+      <title>DIBSTER</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
 
-<div class="pb-20"></div>
 
-<div class="content pb-60">
-  <center>
-    <img src="/DIBSTER-2.png" alt="DIBSTER Logo" class="w-28 h-auto pt-24">
-    <h1 class="text-4xl font-bold pt-5">"DIBBY" DIBSTER</h1>
-    <p style="max-width: 600px;" class="pt-5 font-sans text-lg leading-relaxed">
-      Hello, I'm DIBSTER, also known as DIBBY or DIB. I'm a full stack developer from the United States.
-      Currently working as the Staff Manager, Head of the Beta Testing Program, as well as a Developer and System Administrator for DanBot Hosting.
-    </p>
-  </center>
-</div>
+    <body>
+      <div class="background-container"></div>
+      <div class="dim-overlay"></div>
 
-<div class="grid-container">
-  <div class="max-w-md mx-auto"> <!-- Added max-w-md and mx-auto for centering and limiting width -->
-    <div class="grid gap-8"> <!-- Increased gap to 8 for more spacing between grid items -->
-      <div class="box p-4 bg-black shadow-md rounded-lg">
-      <div class="flex items-center mb-2">
-        <svg class="w- h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
-        </svg>
-        <h2 class="text-lg font-semibold">Box 1</h2>
-      </div>
-      <p class="text-gray-600">This is the description for Box 1.</p>
+      <div class="pb-20"></div>
+
+      <div class="content pb-48">
+        <center>
+          <img src="/DIBSTER-2.png" alt="DIBSTER Logo" class="w-28 h-auto pt-24">
+          <h1 class="text-4xl font-bold pt-5">"DIBBY" DIBSTER</h1>
+          <p style="max-width: 600px;" class="pt-5 font-sans text-lg leading-relaxed">
+            Hello, I'm DIBSTER, also known as DIBBY or DIB. I'm a full stack developer from the United States.
+            Currently working as the Staff Manager, Head of the Beta Testing Program, as well as a Developer and System Administrator for DanBot Hosting.
+          </p>
+        </center>
       </div>
 
-      
-      <div class="box p-4 bg-black shadow-md rounded-lg">
-      <div class="flex items-center mb-2">
-        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
-        </svg>
-        <h2 class="text-lg font-semibold">Box 2</h2>
-      </div>
-      <p class="text-gray-600">This is the description for Box 2.</p>
-      </div>
+      <!-- Projects -->
+      <div id="projects" class="content-center py-10">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="max-w-2xl">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">Projects</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-400">Here are the projects I work on here at DBH.</p>
+            </div>
+
+            <ul role="list" class="mt-4 grid gap-x-8 gap-y-6 sm:grid-cols-3 xl:col-span-3">
+                <div class="p-2 bg-[#11111199] rounded-md">
+                    <li>
+                        <div class="content-center flex items-center gap-x-6">
+                            <div>
+                                <h3 class=" content-center text-base font-semibold leading-7 tracking-tight text-blue-500 hover:text-blue-600"><a href="https://github.com/DanBot-Hosting/pterodactyl-eggs" target="_blank">Pterodactyl Eggs</a></h3>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="p-2 bg-[#11111199] rounded-md pb-10">
+                    <li>
+                        <div class=" content-centerflex items-center gap-x-6">
+                            <div>
+                                <h3 class="content-center text-base font-semibold leading-7 tracking-tight text-blue-500 hover:text-blue-600"><a href="https://github.com/DanBot-Hosting/DanBot-Hosting" target="_blank">Discord Bots</a></h3>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
     </div>
-  </div>
-</div>
+
+    <hr class="h-0.5 bg-gray-700 border-none">
+
+    <footer class="bg-[#141414fc]">
+          <div class="max-w-screen-xl px-4 py-6 mx-auto space-y-6 overflow-hidden sm:px-6 lg:px-8">
+    
+              <div class="flex justify-center space-x-4">
+                  <a href="https://x.com/DEV-DIBSTER" target="_blank" class="text-gray-400 hover:text-gray-300">
+                      <span class="sr-only">X</span>
+                      <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                  <a href="https://discord.com/users/757296951925538856" class="text-gray-400 hover:text-gray-300">
+                      <span class="sr-only">Discord</span>
+                      <i class="fa-xl fa-brands fa-discord"></i>
+                  </a>
+    
+                  <a href="https://gtihub.com/DEV-DIBSTER" class="text-gray-400 hover:text-gray-300">
+                      <span class="sr-only">GitHub</span>
+                      <i class="fa-xl fa-brands fa-github"></i>
+                  </a>
+              </div>
+    
+              <p class="text-base leading-8 text-center text-gray-400">&copy; <script>document.write(new Date().getFullYear())</script> <span class="font-semibold">DIBSTER</span> - All Rights Reserved.</p>
+          </div>
+      </footer>
+</body>
+</html>
