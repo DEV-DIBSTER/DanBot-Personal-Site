@@ -112,7 +112,7 @@
               <div class="flex items-center justify-center gap-x-6">
                 <div class="text-center">
                   <h3 class="text-2xl font-semibold leading-7 tracking-tight text-blue-500 hover:text-blue-600">
-                    <a href="https://github.com/DanBot-Hosting/DanBot-Hosting/DanBotHostingStats" target="_blank">DBH Main Discord Bot</a>
+                    <a href="https://github.com/DanBot-Hosting/DanBotHostingStats" target="_blank">DBH Main Discord Bot</a>
                   </h3>
                 </div>
               </div>
